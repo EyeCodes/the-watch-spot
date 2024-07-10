@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css");
+
+a{
+  text-decoration: none;
+  color: white;
+  font-weight: 400;
+}
+
+header{
+  height: 100%;
+  width: 100dvw;
+  padding-bottom: 50px;
+  background-color: #141414;
+  font-family: 'Epilogue';
+  color: white;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-sec{
+  height: 75px;
+  display: grid;
+  grid-template-columns: 10% 60% 10%;
+  column-gap: .5rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo{
+  margin-left: -5px;
+  font-size: 15px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.logo img{
+  margin-right: 5px;
+}
+
+nav{
+  display: flex;
+  align-items: center;
+  gap: 2em;
+  font-size: 9px;
+}
+
+.contact-no{
+  height: 48px;
+  width: 159px;
+  background-color: #1E2827;
+  border-radius: 8px;
+  font-size: 9px;
+  text-align: center;
+  align-content: center;
+}
+
+.hero-sec{
+  height: 38em;
+  width: 79em;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  margin: auto 137px;
+}
+
+.hero-sec h1{
+  height: 124px;
+  width: 850px;
+  max-width: fit-content;
+  font-size: 60px;
+}
+.hero-sec p{
+  height: 124px;
+  width: 300px;
+  font-size: 14px;
+  font-weight: 300;
+}
+.swiper{
+  height: 320px;
+  width: 436px;
+  right: 5%;
+}
+.swiper-slide{
+  height: 255px;
+  width: 436px;
+  background-color: #1E2827;
+  display: flex;
+  justify-content: center;
+}
+.watch-slide-img{
+  height: 233px;
+  width: 348px;
+}
+.highlight-img{
+  height: 394px;
+  width: 676px;
+}
+.swiper-button-next {
+  width: 40px;
+  height: 40px;
+  border: solid 2px white;
+  border-radius: 8px;
+  --swiper-navigation-size: 20px;
+  --swiper-navigation-top-offset: 90%;
+  --swiper-navigation-sides-offset: 80%;
+  --swiper-navigation-color: white
+}
+.swiper-button-prev {
+  width: 40px;
+  height: 40px;
+  border: solid 2px white;
+  border-radius: 8px;
+  --swiper-navigation-size: 20px;
+  --swiper-navigation-top-offset: 90%;
+  --swiper-navigation-sides-offset: 0;
+  --swiper-navigation-color: white
+}
+.swiper-pagination{
+  width: fit-content;
+  letter-spacing: -2;
+  left: 83%;
+  bottom: 5%;
+}
