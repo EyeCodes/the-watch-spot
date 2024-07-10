@@ -1,38 +1,96 @@
 @import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap');
+
 .container-about-us{
-    background-color: papayawhip;
-    display: flex;
-    padding: 80px 132px 80px 132px;
-    gap: 110px;
+    // background-color: red;
+    display: grid;
+    grid-template-columns: 174px 859px ;
     justify-content: space-around;
-    font-family: 'Epilogue', sans-serif;
+    gap: 40px;
 }
 .container-about-us h2{
     font-size: 40px;
     font-weight: 600;
+    margin-top: 80px;
+    line-height: 44px;
+    letter-spacing: -0.02em;
 }
-.container-about-us p{
-    
+.abt-us-content p{
+    margin-top: 80px;
     font-size: 14px;
     font-weight: 300;
+    line-height: 18px;
     letter-spacing: -0.02em;
 }
 .grid-abt-1{
     max-width: 439px;
+    
 }
 .grid-abt-2{
-    max-width:380px;
+    max-width: 380px;
+    
 }
-.container-abt-video{
+.abt-us-content{
     display: flex;
-    flex-wrap: wrap;
-    max-width: 892px;
     gap: 40px;
 }
-.container-abt-video img{
-    width: 129%;
-}
-// @media (max-width:726px){
-    
-// }
 
+.abt-us-img img{
+    width: 104%;
+}
+@media (max-width: 726px){
+    .container-about-us h2{
+        margin-left: 0%;
+        padding: 15px;
+    }
+    .abt-blank{
+        display: none;
+    }
+    .container-about-us{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        gap: 0px;
+}
+    .grid-abt-1{
+        max-width: 220px;
+        padding: 15px;
+    
+}
+    .grid-abt-2{
+        max-width: 250px;
+        padding: 15px;
+    
+}
+    .abt-us-img img{
+        justify-content: center;
+        max-width: 100%;
+        max-height: auto;
+        padding: 15px;
+    }
+    .abt-us-content{
+        gap: 10px;
+        max-width: 100%;
+        
+    }
+}
+@media (max-width: 667px){
+    .container-about-us h2{
+        width: 100%;
+    }
+    .abt-us-content{
+        
+        flex-direction: column;
+    }
+    .abt-us-content p{
+        margin-top: 0;
+    }
+    .grid-abt-1,
+    .grid-abt-2{
+        max-width: 100%;
+        padding: 0 15px 0 15px;
+    }
+    .abt-us-img img{
+        object-fit: cover;
+        height: 365px;
+    }
+}
