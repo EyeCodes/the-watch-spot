@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap');
 @import url("https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css");
 
+*{border: solid 1px;}
 a{
   text-decoration: none;
   color: white;
@@ -9,26 +10,26 @@ a{
 
 header{
   height: 100%;
-  width: 100dvw;
+  width: 100%;
+  display: grid;
   padding-bottom: 50px;
   background-color: #141414;
   font-family: 'Epilogue';
   color: white;
-  justify-content: center;
   align-items: center;
 }
 
 .header-sec{
   height: 75px;
-  display: grid;
-  grid-template-columns: 10% 60% 10%;
-  column-gap: .5rem;
+  width: 80%;
+  display: flex;
+  margin: auto 137px;
+  column-gap: 1%;
   justify-content: center;
   align-items: center;
 }
 
 .logo{
-  margin-left: -5px;
   font-size: 15px;
   display: flex;
   justify-content: start;
@@ -39,7 +40,9 @@ header{
 }
 
 nav{
+  margin-left: 50px;
   display: flex;
+  flex-grow: 1;
   align-items: center;
   gap: 2em;
   font-size: 9px;
@@ -56,8 +59,8 @@ nav{
 }
 
 .hero-sec{
-  height: 38em;
-  width: 79em;
+  height: auto;
+  width: 80%;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -66,21 +69,24 @@ nav{
 }
 
 .hero-sec h1{
-  height: 124px;
-  width: 850px;
-  max-width: fit-content;
+  height: auto;
+  // min-width: 10%;
+  width: 70%;
   font-size: 60px;
+  line-height: 62px;
+  letter-spacing: -4;
 }
 .hero-sec p{
-  height: 124px;
-  width: 300px;
+  height: auto;
+  width: 25%;
   font-size: 14px;
   font-weight: 300;
 }
 .swiper{
   height: 320px;
   width: 436px;
-  right: 5%;
+  margin-left: 0;
+  margin-bottom: 10px;
 }
 .swiper-slide{
   height: 255px;
@@ -92,10 +98,6 @@ nav{
 .watch-slide-img{
   height: 233px;
   width: 348px;
-}
-.highlight-img{
-  height: 394px;
-  width: 676px;
 }
 .swiper-button-next {
   width: 40px;
@@ -122,4 +124,50 @@ nav{
   letter-spacing: -2;
   left: 83%;
   bottom: 5%;
+}
+.highlight-img{
+  height: 394px;
+  width: 60%;
+}
+
+// tablet
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  header{
+    display:flex;
+    flex-direction: column;
+    row-gap: 0;
+  }
+  .header-sec{
+    width: 95%;
+  }
+  .hero-sec{
+    width: 95%;
+    flex-direction: row-reverse;
+    justify-content: left;
+  }
+  .hero-sec h1{
+    height: auto;
+    width: 653px;
+    margin-right: 105px;
+  }
+  .hero-sec p{
+    width: 248px;
+  }
+  .swiper{
+    width: 436px;
+  }
+  .swiper-button-next{
+  --swiper-navigation-sides-offset: 75%;
+  }
+  .swiper-pagination{
+    left: 78%;
+  }
+  .highlight-img{
+    width: 100%;
+  }
+
+}
+
+@media screen and (max-width: 767px) and (min-width: 375px) {
+
 }
