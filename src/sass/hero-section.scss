@@ -23,7 +23,7 @@ header{
   height: 75px;
   width: 80%;
   display: flex;
-  margin: auto 137px;
+  margin: auto 132px;
   column-gap: 1%;
   justify-content: center;
   align-items: center;
@@ -65,12 +65,11 @@ nav{
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  margin: auto 137px;
+  margin: auto 132px;
 }
 
 .hero-sec h1{
   height: auto;
-  // min-width: 10%;
   width: 70%;
   font-size: 60px;
   line-height: 62px;
@@ -139,11 +138,13 @@ nav{
   }
   .header-sec{
     width: 95%;
+    margin: auto 32px;
   }
   .hero-sec{
     width: 95%;
     flex-direction: row-reverse;
     justify-content: left;
+    margin: auto 32px;
   }
   .hero-sec h1{
     height: auto;
@@ -169,5 +170,21 @@ nav{
 }
 
 @media screen and (max-width: 767px) and (min-width: 375px) {
+.header-sec, .hero-sec{
+  margin-left: 20px;
+  margin-right: 20px;
+}
+nav, .contact-no{
+  display: none;
+}
+.hero-sec{
+  flex-direction: row-reverse;
+}
+.hero-sec h1, .hero-sec p{
+  width: 100%;
+}
+.highlight-img{
+  width: 100%;
+}
 
 }
