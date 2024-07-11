@@ -6,6 +6,7 @@
     grid-template-columns: 174px 859px ;
     justify-content: space-around;
     gap: 40px;
+    margin-inline: 132px;
 }
 .container-about-us h2{
     font-size: 40px;
@@ -31,13 +32,13 @@
 }
 .abt-us-content{
     display: flex;
-    gap: 40px;
+    gap: 20px;
 }
 
 .abt-us-img img{
-    width: 104%;
+    width: 100%;
 }
-@media (max-width: 726px){
+@media (max-width: 1024px){
     .container-about-us h2{
         margin-left: 0%;
         padding: 15px;
@@ -50,6 +51,7 @@
         flex-wrap: wrap;
         justify-content: flex-start;
         gap: 0px;
+        margin-inline: 32px;
 }
     .grid-abt-1{
         max-width: 220px;
@@ -73,9 +75,12 @@
         
     }
 }
-@media (max-width: 667px){
+@media (max-width: 726px){
     .container-about-us h2{
         width: 100%;
+    }
+    .container-about-us{
+        margin-inline: 20px;
     }
     .abt-us-content{
         

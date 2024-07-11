@@ -1,0 +1,73 @@
+.container-catalog{
+    font-family: 'Epilogue', sans-serif;
+    box-sizing: border-box;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 80px;
+    padding-inline: 132px;
+}
+.container-catalog h2{
+    align-self: flex-start;
+    margin: 0;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 44px;
+    letter-spacing: -0.02em;
+    padding-left: 105px;
+}
+.container-catalog ul{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1176px;
+    gap: 24px;
+    padding: 0px;
+    margin: 0;
+    justify-content: center;
+}
+.catalog-card{
+    max-width: 276px;
+    max-height: 375px;
+    gap: 14px;
+}
+.catalog-card img{
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+.catalog-card p{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: -0.02em;
+    margin-block: 0px;
+}
+.catalog-card span{
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14px;
+    letter-spacing: -0.02em;
+    color:rgba(20, 20, 20, 0.5);
+}
+.catalog-card-content{
+    gap: 4px;
+}
+.container-catalog button{
+    align-self: flex-end;
+    margin: 90px 105px;
+    width: 122px;
+    height: 50px;
+    border-radius: 8px;
+    gap: 10px;
+    padding: 10px;
+    background-color:rgba(30, 40, 39, 1);
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14px;
+    text-align: center;
+    color: #ffff;
+    border-style: none;
+}
+
