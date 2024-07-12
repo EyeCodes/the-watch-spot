@@ -1,73 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap');
 .container-catalog{
-    font-family: 'Epilogue', sans-serif;
     box-sizing: border-box;
-    padding: 20px;
-    display: flex;
+    padding: 0;
+    margin: 0;
+    display: flexbox;
+    flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
-    gap: 80px;
-    padding-inline: 132px;
-}
-.container-catalog h2{
-    align-self: flex-start;
-    margin: 0;
-    font-size: 40px;
-    font-weight: 600;
-    line-height: 44px;
-    letter-spacing: -0.02em;
-    padding-left: 105px;
-}
-.container-catalog ul{
-    list-style: none;
-    display: flex;
-    flex-wrap: wrap;
     max-width: 1176px;
-    gap: 24px;
-    padding: 0px;
-    margin: 0;
+    margin-inline: auto;
+    margin-top: 142px;
+    font-family: 'Epilogue', sans-serif;
     justify-content: center;
 }
-.catalog-card{
-    max-width: 276px;
-    max-height: 375px;
-    gap: 14px;
+
+.container-catalog h2 {
+    align-self: flex-start;
+    margin: 0;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 36px;
+    letter-spacing: -0.02em;
+   
 }
-.catalog-card img{
-    max-width: 100%;
-    max-height: 100%;
+
+.container-catalog-img{
+    width: 276px;
+    overflow: hidden;
+}
+
+.container-catalog-img img{
+    width: 100%;
+    height: 375px;
     object-fit: contain;
+    object-position: center;
 }
-.catalog-card p{
+
+.container-catalog ul{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    gap: 14px;
+    padding: 0px;
+    justify-content: space-between;
+    margin-block: 64px;
+}
+.container-catalog ul li{
+    display: inline-block;
+    max-width: 276px;
+    
+}
+
+.catalog-content p{
+    margin: 0px 0px 4px 0px;
     font-size: 14px;
     font-weight: 400;
     line-height: 18px;
     letter-spacing: -0.02em;
-    margin-block: 0px;
+    max-width: 276px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
-.catalog-card span{
+
+.catalog-content span{
     font-size: 12px;
     font-weight: 400;
     line-height: 14px;
     letter-spacing: -0.02em;
-    color:rgba(20, 20, 20, 0.5);
+    color: rgba(20, 20, 20, 0.5);
 }
-.catalog-card-content{
-    gap: 4px;
-}
+
 .container-catalog button{
-    align-self: flex-end;
-    margin: 90px 105px;
+    float: right;
     width: 122px;
     height: 50px;
     border-radius: 8px;
     gap: 10px;
-    padding: 10px;
-    background-color:rgba(30, 40, 39, 1);
+    background-color: rgba(30, 40, 39, 1);
+    color: rgba(255, 255, 255, 1);
     font-size: 12px;
     font-weight: 400;
     line-height: 14px;
     text-align: center;
-    color: #ffff;
     border-style: none;
+    margin-bottom: 142px;
 }
 
+@media (max-width: 1024px){
+    .container-catalog{
+        margin-inline: 4%;
+        
+    }
+    .container-catalog ul{
+        justify-content: space-between;
+        
+    }
+    .container-catalog ul li{
+        display: inline-block;
+        max-width: 336px;
+        gap: 14px;
+    }
+    .container-catalog-img{
+        width: 336px;
+        overflow: hidden;
+    }
+    .container-catalog-img img{
+        width: 100%;
+        height: 375px;
+        object-fit: contain;
+        object-position: center;
+    }
+}
+
+@media(max-width: 768px){
+    .container-catalog{
+        margin-inline: 5%;
+        
+    }
+    .container-catalog ul{
+        justify-content: center;
+        
+    }
+    .container-catalog button{
+        width: 108px;
+        height: 42px;
+    }
+}
