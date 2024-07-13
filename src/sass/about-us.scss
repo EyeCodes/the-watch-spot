@@ -17,7 +17,7 @@
     letter-spacing: -0.02em;
 }
 .abt-us-content p{
-    
+    margin-block: 0px;
     font-size: 14px;
     font-weight: 300;
     line-height: 18px;
@@ -52,9 +52,9 @@
     .container-about-us{
         display: flex;
         flex-wrap: wrap;
-        // justify-content: flex-start;
-        gap: 0px;
         margin-inline: 32px;
+        gap: 10px;
+        justify-content: center;
 }
     .grid-abt-1{
         max-width: 220px;
@@ -68,17 +68,18 @@
 }
     .abt-us-img img{
         justify-content: center;
-        max-width: 100%;
+        width: 704px;
         max-height: auto;
-        padding: 15px;
+        padding: 0px;
     }
     .abt-us-content{
-        gap: 10px;
+        // gap: 10px;
         max-width: 100%;
+        padding-right: 30px;
         
     }
 }
-@media (max-width: 726px){
+@media (max-width: 781px){
     .container-about-us h2{
         width: 100%;
     }
@@ -86,12 +87,10 @@
         margin-inline: 20px;
     }
     .abt-us-content{
-        
+        margin-block: 40px;
         flex-direction: column;
     }
-    .abt-us-content p{
-        margin-top: 0;
-    }
+    
     .grid-abt-1,
     .grid-abt-2{
         max-width: 100%;
@@ -99,6 +98,7 @@
     }
     .abt-us-img img{
         object-fit: cover;
+        width: 89vw;
         height: 365px;
     }
 }
