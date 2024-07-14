@@ -101,7 +101,7 @@
     padding: 10px;
     border-radius: 8px;
     opacity: 0;
-    transition: opacity 0.3s ease;
+    transition: opacity 0.2s ease;
 }
 
 .container-catalog-img:hover .hover-text {
@@ -166,6 +166,9 @@
     right: 0px;
     width: 24px;
     height: 24px;
+    margin: 10px;
+    
+    
     display: flex;
     text-align: center;
     justify-content: center;
