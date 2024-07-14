@@ -12,6 +12,28 @@
       <a href="">SALE</a>
     </nav>
 
+    <button class="nav-collapse" onclick="menuBTN(menuID)">
+      <div></div>
+      <div></div>
+      <div></div>
+    </button>
+
+    <div id="menuID" style="display: none;">
+      <div class="menu-head">
+        <div class="logo">
+          <img src="/src/images/hero-header/logo.png" alt="logo">
+          <span>thewatchspot</span>
+        </div>
+        <span id="menu-close">x</span>
+      </div>
+      
+      <nav class="nav-mobile">
+        <a href="">ABOUT US</a>
+        <a href="">CATALOG</a>
+        <a href="">SALE</a>
+      </nav>
+    </div>
+
     <div class="contact-no">
       <span>+380 (68) 443-94-26</span>
     </div>
@@ -52,6 +74,7 @@
   </div>
 
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="index.js"></script>
   <script>
     const swiper = new Swiper('.swiper', {
   // Optional parameters
