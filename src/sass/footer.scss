@@ -112,7 +112,7 @@ footer ul{
 @media (max-width: 768px){
     .footer-wrapper{
         flex-wrap: wrap;
-        gap: 20px;
+        gap: 50px;
         justify-content: space-between;
     }
     .footer-1 img{
@@ -125,6 +125,13 @@ footer ul{
         line-height: 18px;
         text-align: left;
     }
+    .footer-3 ul {
+        width: 300px;
+    }
+
+    .footer-2 ul{
+         margin-top: 0px;
+    }
     .footer-2 ul li{
         font-family: 'Epilogue';
         font-size: 14px;
@@ -132,10 +139,16 @@ footer ul{
         line-height: 18px;
         letter-spacing: -0.02em;
         text-align: left;
+       
     }
     .footer-content{
         flex-wrap: wrap;
     }
+    .footer-content ul{
+        margin-top: 35px;
+    }
+}
+@media (max-width: 574px){
     .footer-content ul{
         margin-top: 14px;
     }
