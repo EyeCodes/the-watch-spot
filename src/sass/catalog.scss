@@ -274,7 +274,7 @@
     }
     .container-catalog ul li{
         display: inline-block;
-        max-width: 336px;
+        width: 336px;
         gap: 14px;
     }
     .container-catalog-img{
@@ -291,16 +291,22 @@
 
 @media(max-width: 768px){
     .container-catalog{
-        margin-inline: 5%;
+        margin-inline: 20px;
         
     }
     .container-catalog ul{
         justify-content: center;
         
     }
+    .container-catalog ul li{
+        width: 100%;
+    }
     .container-catalog button{
         width: 108px;
         height: 42px;
+    }
+    .container-catalog-img{
+        width: 100%;
     }
 
     .modal-content {
