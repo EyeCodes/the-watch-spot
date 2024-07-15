@@ -1,0 +1,2 @@
+document.getElementById("menu-close").onclick=function(){document.getElementById("menuID").setAttribute("style","display: none")},document.getElementById("buy-now-btn").onclick=function(){document.getElementById("modal").style.display="block",document.body.classList.add("no-scroll")},document.getElementsByClassName("close-btn")[0].onclick=function(){document.getElementById("modal").style.display="none",document.body.classList.remove("no-scroll")};
+//# sourceMappingURL=index.c578b27e.js.map
