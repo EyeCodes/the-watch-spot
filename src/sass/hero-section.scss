@@ -14,7 +14,7 @@ header{
   background-color: #141414;
   font-family: 'Epilogue';
   color: white;
-  align-items: center;
+  justify-content: center;
 }
 .header-sec{
   height: 75px;
@@ -255,8 +255,9 @@ nav, .contact-no{
   letter-spacing: -2;
 }
 .hero-sec p{
-  height: 108px;
-  width: 260px !important;
+  height: auto;
+  width: 70%;
+  max-width: fit-content;
   grid-row: 3;
   justify-self: end;
   }
