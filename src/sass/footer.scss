@@ -3,7 +3,7 @@ footer{
     max-width: 100%;
     height: auto;
     background-color: rgba(30, 40, 39, 1);
-    padding: 90px 90px;
+    padding: 90px 90px 20px 90px;
 }
 
 .footer-wrapper{
@@ -21,8 +21,13 @@ footer ul{
     color: #fff;
 }
 
-.footer-1 img{
+.footer-img{
     width: 50px;
+}
+.footer-img img{
+    width: 100%;
+    object-fit: cover;
+
 }
 
 .footer-1 p{
@@ -102,7 +107,7 @@ footer ul{
 
 @media (max-width: 1024px){
     footer{
-        padding: 5%;
+        padding: 5% 5% 1% 5%;
     }
     .footer-wrapper{
         width: 100%;
